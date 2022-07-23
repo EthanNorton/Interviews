@@ -1,0 +1,60 @@
+
+Code
+
+Python (Pyodide)
+
+grades = [['Name',   ['A', 'B','C','D','E']],
+                 ['Ankit',   [41, 34, 45, 55, 63]],
+                 ['Aravind', [42, 23, 34, 44, 53]],
+                 ['Lakshay', [32, 23, 13, 54, 67]],
+                 ['Gyan',    [23, 82, 23, 63, 34]],
+                 ['Pranav',  [21, 23, 25, 56, 56]]
+                ]
+grades
+grades[0]
+['Name', ['A', 'B', 'C', 'D', 'E']]
+grades[1]
+['Ankit', [41, 34, 45, 55, 63]]
+grades[1][0]
+grades[1][1]
+[41, 34, 45, 55, 63]
+grades[1][1][1]
+grades[1][1][1]
+34
+]
+grades[1][0]
+'Ankit'
+grades[1]
+['Ankit', [41, 34, 45, 55, 63]]
+for student in grades:
+    name = student[0]
+    grades = student[1][3]
+    
+    print(name, grades)
+Name D
+Ankit 55
+Aravind 44
+Lakshay 54
+Gyan 63
+Pranav 56
+student_with_grades_in_B = []
+​
+for student in grades[1:]:
+    name = student[0]
+    marks_in_B = student[1][1]
+    
+    student_with_grades_in_B.append([marks_in_B,name])
+student_with_grades_in_B
+[[34, 'Ankit'], [23, 'Aravind'], [23, 'Lakshay'], [82, 'Gyan'], [23, 'Pranav']]
+sorted(student_with_grades_in_B)
+[[23, 'Aravind'], [23, 'Lakshay'], [23, 'Pranav'], [34, 'Ankit'], [82, 'Gyan']]
+
+
+
+
+
+
+st marks in subject B?
+#Who scored the highest marks in subject B?
+sorted(student_with_grades_in_B, reverse=True)[1]
+[34, 'Ankit']
